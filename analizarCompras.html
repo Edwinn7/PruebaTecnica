@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Compras</title>
+</head>
+<body>
+    <h1>Análisis de Compras de Motocicletas</h1>
+    <form action="/realizarAnalisis" method="get">
+        <button type="submit">Realizar Análisis</button>
+    </form>
+    <br><br><br>
+    <form action="/cargarVentas" method="post" enctype="multipart/form-data">
+        <input type="file" name="ventasFile" accept=".csv, .json" required>
+        <button type="submit">Cargar Ventas</button>
+    </form>
+</body>
+</html>
